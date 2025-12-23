@@ -3,62 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <title>StraLife</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Estilo -->
   <style>
+    :root {
+      --bg: #020617;
+      --card: #020617;
+      --border: #1e293b;
+      --text: #ffffff;
+      --muted: #cbd5f5;
+      --accent: #6366f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #020617;
-      color: #ffffff;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
     }
 
     header {
-      padding: 40px 20px;
+      padding: 80px 20px 60px;
       text-align: center;
-      border-bottom: 1px solid #1e293b;
     }
 
     header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: 56px;
+      margin-bottom: 16px;
     }
 
     header p {
-      font-size: 20px;
-      color: #cbd5f5;
+      font-size: 22px;
+      color: var(--muted);
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.5;
     }
 
     section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
     }
 
     .card {
-      background: #020617;
-      border: 1px solid #1e293b;
-      border-radius: 16px;
-      padding: 30px;
-      margin-bottom: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
     }
 
     .card h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      font-size: 24px;
+      margin-bottom: 12px;
     }
 
     .card p {
-      color: #cbd5f5;
+      color: var(--muted);
       line-height: 1.6;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 80px 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
     }
 
     footer {
       text-align: center;
       padding: 40px 20px;
-      border-top: 1px solid #1e293b;
+      border-top: 1px solid var(--border);
       color: #94a3b8;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -67,34 +102,53 @@
 
   <header>
     <h1>StraLife</h1>
-    <p>Estratégia, Dados, Automação & Inteligência Artificial</p>
+    <p>
+      Estratégia, Dados, Automação e Inteligência Artificial aplicada
+      para transformar negócios e acelerar resultados.
+    </p>
   </header>
 
   <section>
     <div class="card">
-      <h2>O que fazemos</h2>
+      <h2>Estratégia</h2>
       <p>
-        A StraLife ajuda empresas a tomarem decisões melhores usando dados,
-        automação e inteligência artificial aplicada ao negócio.
+        Diagnóstico profundo do negócio, definição de prioridades e
+        direcionamento estratégico baseado em dados reais.
       </p>
     </div>
 
     <div class="card">
-      <h2>Como ajudamos</h2>
+      <h2>Dados</h2>
       <p>
-        Criamos soluções inteligentes, analisamos processos, automatizamos
-        operações e entregamos insights claros para crescimento sustentável.
+        Estruturação, análise e visualização de dados para apoiar decisões
+        com clareza e confiança.
       </p>
     </div>
 
     <div class="card">
-      <h2>Próximo passo</h2>
+      <h2>Automação</h2>
       <p>
-        Este site é a base da StraLife. Em breve, novas funcionalidades,
-        automações e inteligência artificial estarão disponíveis aqui.
+        Automação de processos operacionais e comerciais para ganhar escala,
+        eficiência e velocidade.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Inteligência Artificial</h2>
+      <p>
+        Aplicações práticas de IA focadas em resolver problemas reais,
+        não apenas tecnologia por tecnologia.
       </p>
     </div>
   </section>
+
+  <div class="cta">
+    <h2>Construindo o futuro agora</h2>
+    <p>
+      A StraLife nasce para unir estratégia, tecnologia e inteligência
+      artificial em soluções simples, eficientes e escaláveis.
+    </p>
+  </div>
 
   <footer>
     © 2025 StraLife — Todos os direitos reservados
@@ -102,4 +156,3 @@
 
 </body>
 </html>
-
